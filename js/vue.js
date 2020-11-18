@@ -8,14 +8,14 @@ const sliderApp = new Vue({
   methods: {
     prev: function() {
       if (this.currentIndex === 0) {
-        this.currentIndex = img.length - 1;
+        this.currentIndex = this.img.length - 1;
       } else {
          this.currentIndex--;
       }
     },
 
     next: function() {
-       if (this.currentIndex === img.length - 1) {
+       if (this.currentIndex === this.img.length - 1) {
           this.currentIndex = 0;
        } else {
           this.currentIndex++;
